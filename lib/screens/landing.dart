@@ -9,8 +9,9 @@ class LandingPage extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
+          children: <Widget>[
+            const Spacer(),
+            const Text(
               "I-Talent",
               style: TextStyle(
                 color: Colors.white,
@@ -18,13 +19,26 @@ class LandingPage extends StatelessWidget {
                 fontSize: 100,
               ),
             ),
-            Text(
+            const Text(
               "Tom Truyen - 3AONd",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
               ),
             ),
+            const Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                const Text("Made with"),
+                const SizedBox(width: 16),
+                Image.asset(
+                  'assets/flutter.png',
+                  height: 40,
+                ),
+              ],
+            ),
+            const SizedBox(height: 24),
           ],
         ),
       ),
