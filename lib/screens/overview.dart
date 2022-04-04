@@ -29,6 +29,11 @@ class Overview extends StatelessWidget {
                 page: Pages.activities,
               ),
               ListItem(
+                title: 'Hackathon',
+                gotoPage: gotoPage,
+                page: Pages.hackathon,
+              ),
+              ListItem(
                 title: 'Activiteit 1: Craftworkz',
                 gotoPage: gotoPage,
                 page: Pages.craftworkz,

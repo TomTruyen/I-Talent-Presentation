@@ -4,6 +4,7 @@ import 'package:italent/screens/activities.dart';
 import 'package:italent/screens/craftworkz.dart';
 import 'package:italent/screens/end.dart';
 import 'package:italent/screens/flutter.dart';
+import 'package:italent/screens/hackathon.dart';
 import 'package:italent/screens/kubernetes.dart';
 import 'package:italent/screens/landing.dart';
 import 'package:italent/screens/overview.dart';
@@ -68,6 +69,7 @@ class Home extends StatelessWidget {
             const LandingPage(),
             Overview(gotoPage: gotoPage),
             const Activities(),
+            const Hackathon(),
             const Craftworkz(),
             const Kubernetes(),
             const Flutter(),
