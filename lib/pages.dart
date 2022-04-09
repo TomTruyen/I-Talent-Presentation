@@ -1,6 +1,8 @@
 enum Pages {
   landing,
   overview,
+  projectweek,
+  popsessions,
   activities,
   hackathon,
   craftworkz,

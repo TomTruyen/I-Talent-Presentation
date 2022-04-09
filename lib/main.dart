@@ -8,6 +8,8 @@ import 'package:italent/screens/hackathon.dart';
 import 'package:italent/screens/kubernetes.dart';
 import 'package:italent/screens/landing.dart';
 import 'package:italent/screens/overview.dart';
+import 'package:italent/screens/pop_sessions.dart';
+import 'package:italent/screens/projectweek.dart';
 import 'package:italent/screens/reflection.dart';
 
 void main() {
@@ -68,6 +70,8 @@ class Home extends StatelessWidget {
           children: <Widget>[
             const LandingPage(),
             Overview(gotoPage: gotoPage),
+            const ProjectWeek(),
+            const PopSessions(),
             const Activities(),
             const Hackathon(),
             const Craftworkz(),
