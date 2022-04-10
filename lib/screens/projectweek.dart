@@ -5,6 +5,7 @@ class ProjectWeek extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Zie: "Projectweek" in mails voor inzending van case als "bewijs"
     return Container(
       color: Colors.orange,
     );

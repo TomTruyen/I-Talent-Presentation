@@ -5,6 +5,7 @@ enum Pages {
   popsessions,
   activities,
   hackathon,
+  extra,
   craftworkz,
   kubernetes,
   flutter,

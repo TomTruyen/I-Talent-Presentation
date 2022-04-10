@@ -3,6 +3,7 @@ import 'package:italent/pages.dart';
 import 'package:italent/screens/activities.dart';
 import 'package:italent/screens/craftworkz.dart';
 import 'package:italent/screens/end.dart';
+import 'package:italent/screens/extra_activities.dart';
 import 'package:italent/screens/flutter.dart';
 import 'package:italent/screens/hackathon.dart';
 import 'package:italent/screens/kubernetes.dart';
@@ -74,6 +75,7 @@ class Home extends StatelessWidget {
             const PopSessions(),
             const Activities(),
             const Hackathon(),
+            const ExtraActivities(),
             const Craftworkz(),
             const Kubernetes(),
             const Flutter(),
