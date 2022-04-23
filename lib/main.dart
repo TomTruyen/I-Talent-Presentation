@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:italent/pages.dart';
+import 'package:italent/screens/about_me.dart';
 import 'package:italent/screens/activities.dart';
 import 'package:italent/screens/craftworkz.dart';
 import 'package:italent/screens/end.dart';
@@ -51,10 +52,10 @@ class Home extends StatelessWidget {
     return Scaffold(
       body: GestureDetector(
         onTapUp: (details) {
-          var x = details.globalPosition.dx;
-          var width = MediaQuery.of(context).size.width;
+          var y = details.globalPosition.dy;
+          var height = MediaQuery.of(context).size.height;
 
-          if (width / 2 > x) {
+          if (height / 2 > y) {
             controller.previousPage(
               duration: const Duration(seconds: 1),
               curve: Curves.easeIn,
@@ -68,9 +69,11 @@ class Home extends StatelessWidget {
         },
         child: PageView(
           controller: controller,
+          scrollDirection: Axis.vertical,
           children: <Widget>[
             const LandingPage(),
             Overview(gotoPage: gotoPage),
+            const AboutMe(),
             const ProjectWeek(),
             const PopSessions(),
             const Activities(),

@@ -1,6 +1,7 @@
 enum Pages {
   landing,
   overview,
+  aboutMe,
   projectweek,
   popsessions,
   activities,

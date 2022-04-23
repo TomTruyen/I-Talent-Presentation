@@ -24,6 +24,11 @@ class Overview extends StatelessWidget {
             shrinkWrap: true,
             children: <Widget>[
               ListItem(
+                title: 'Over mij',
+                gotoPage: gotoPage,
+                page: Pages.aboutMe,
+              ),
+              ListItem(
                 title: 'Projectweek',
                 gotoPage: gotoPage,
                 page: Pages.projectweek,
